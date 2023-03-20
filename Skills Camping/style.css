@@ -1,10 +1,18 @@
 body{
     margin: 0;
+    
+}
+*{
+    box-sizing: border-box;
+    user-select: none;
+}
+li{
+    list-style: none;
 }
 
 header img{
-    width: 92px;
-    height: 30px;
+    width: 120px;
+    height: 50px;
 }
 
 nav{
@@ -25,7 +33,7 @@ nav{
     list-style: none;
 }
 
-nav a{
+nav .menu a{
     /* padding-left: 30px; */
     padding-top: 5px;
     font-size: 16px;
@@ -35,11 +43,124 @@ nav a{
     padding: 12px;
 }
 
-nav a:hover{
+nav .menu a:hover{
     background-color: #f1f5f9;
     border-radius: 5px;
+} 
+
+/* 로그인 버튼  */
+
+.menu1{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 5px;
+    margin-right: 10px;
 }
+
+nav .menu1 a{
+    padding-left: 30px;
+    padding-top: 5px;
+    font-size: 16px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 20px;
+    background-color: #7dd3fc;
+    font-weight: 400;
+    padding: 12px;
+}
+
+nav .menu1 a:hover{
+    background-color: #0284c7;
+    border-radius: 20px;
+    color: #000;
+} 
+
 /* nav img:hover{
     background-color: #f1f5f9;
     border-radius: 5px;
-} */
+}
+
+
+/* 캠핑장소개 페이지 css */
+
+#visual{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 50px;
+}
+
+#visual img{
+    height: 734px;
+    width: 734px;
+    margin: auto ;
+    display: block;
+    border-radius: 20%;
+}
+
+.vis{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 25% ;
+}
+
+.vis h1{
+    font-size: 50px;
+}
+.vis li{
+    font-size: 20px;
+}
+
+/* 예약안내 페이지 css */
+#reservaction{  
+    margin-top: 50px;
+    background-image: url(images/image_01\ \(1\).jpg);
+    height: 100%;
+    width: 100%;
+    padding: 250px;
+}
+
+#reservaction img{
+    height: 720px;
+    width: 753px;
+    margin: auto ;
+    display: block;
+}
+
+.reser{
+    display: flex ;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.reser h2{
+    color: #0f172a;
+}
+
+/* 오시는길 지도 */
+#map img{
+    padding: 50px 0;
+    width: 50%; 
+    height: 50%;
+    margin: auto ; 
+    display: block;
+}
+
+
+footer{
+    text-align: center;
+
+}
+
+.fot{
+    display: flex;
+    flex-direction: column;
+}
+
+footer img{
+    width: 220px;
+    height: 66px;
+}
