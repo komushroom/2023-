@@ -180,10 +180,18 @@ ul{list-style:none; }
     /* transform: rotate(90deg); */
     width: 1024px;
     height: 768px;
+    margin-left: 22%;
 }
 
 #rule{
-    background-color: #0284c7;
+    background-color: #e2e2e2;
 }
 
-/* .rul{} */
+.ru {
+    padding-left: 100px;
+}
+
+.ru h1{
+    font-size: 35ㅔㅌ;
+    padding-left: 30px ;
+}

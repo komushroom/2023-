@@ -74,7 +74,7 @@ nav .menu1 a{
     text-decoration: none;
     color: #fff;
     /* border-radius: 10px; */
-    background-color: #7dd3fc;
+    background-color: green;
     font-weight: 400;
     padding: 12px;
 }
@@ -131,6 +131,10 @@ nav .menu1 a:hover{
    height: 800px;
    object-fit: cover; 
 }
+.min{
+    background-color: #000;
+   
+}
 
 .min h1{
     position: absolute;
@@ -138,13 +142,15 @@ nav .menu1 a:hover{
     left: 10%;
     font-size: 50px; 
     color: #fff;
+    background-color: #000;
+    
 }
 .min p{
     position: absolute;
     top: 50%;
     left: 10%;
     font-size: 20px; 
-    color: #fff;
+    color: #000;
 }
 
 
