@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Skiils Camping</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/style/style.css">
 </head>
 <body>
 
@@ -13,33 +13,58 @@
     <header>
         <nav>
             <ul class="menu">
-                <a href="index.html"><img src="images/Skills Camping.png" alt="#"></a>
+                <a href="index.html"><img src="images/logo.jpg" alt="#"></a>
                 <li><a href="camping.html">캠핑장소개</a></li>
                 <li><a href="#">예약하기</a></li>
                 <li><a href="#">마이페이지</a></li>
             </ul>
+
             <ul class="menu1">
                 <li><a href="#">로그인</a></li>
-                <li><a href="#">운영관리</a></li> 
+                <li>
+                    <a  href="#">운영관리</a>
+                    <ul class="depth_1">
+                        <li><a href="#">예약관리</a></li>
+                        <li><a href="#">주문관리</a></li>
+                    </ul>
+                </li> 
             </ul>
         </nav>
     </header>
+    
+    <!-- 메인페이지  -->
+
+    <section id="main">
+        <!-- <img style="position: relative;" src="images/image_01 (4).jpg" alt=""> -->
+        <img src="images/Artboard 1.png" alt="">
+        <div class="min">
+            <h1>숲 속의 휴식처<br>자연과 함께즐기는 <br> 친환경힐링 캠핑</h1>
+            <p>Welcome to Skills Camping</p>
+        </div>
+    </section>
+    
+
     <!--  캠핑장소개 페이지 -->
     <section id="visual">
         <div class="vis">
-            <li><h1>캠핑장 구성</h1></li>
+            <h1>캠핑장 구성</h1>
             <li>텐트데크(3m X 5m) : 10개</li>
             <li>오토캠핑(5m X 8m) : 7개소</li>
+        </div>
+        <div class="visimg">
+            <img  src="images/image_01 (16).jpg" alt="">    
+            <img  style="margin-bottom: 100px;" src="images/image_01 (20).jpg" alt=""> 
             <li><h4>부대시설 : <br> 관리소, 취사장, 세면장, 화장실,  <br> 포토존 , 전망대 ,잔디밭, 어린이놀이터</h4></li> 
         </div>
-        <img src="images/image_01 (14).jpg" alt="">    
+
     </section>
 
     <!--  예약안내 페이지 -->
     
     <section id="reservaction">
-        <img src="images/image_01 (1).jpg" alt="">
+        <img src="images/image_01 (6).jpg" alt="">
         <ul class="reser">
+            <!-- <p>지금 캠핑장 방문하기</p> -->
             <li><p>캠핑장 예약은 당일부터 2주간 가능합니다.</p></li>
             <li><p>캠핑장 입영은 예약한 날의 14시부터 가능 합니다.<p></li>
             <li><p>당일 예약의 경우 17시부터 입영할 수 있습니다.<p></li>
@@ -48,7 +73,7 @@
     </section>
     <!-- 오시는길 지도 -->
     <section id="map">
-        <img src="images/지도1.png" alt="">
+        <img src="images/오시는길 약도.jpg" alt="">
     </section>
 
     <!-- footer영역 -->

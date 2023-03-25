@@ -1,0 +1,273 @@
+body{
+    margin: 0;
+    
+}
+*{
+    box-sizing: border-box;
+    user-select: none;
+}
+li{
+    list-style: none;
+}
+/* header{
+    po
+} */
+
+header img{
+    width: 120px;
+    height: 50px;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color:#eee;
+    /* position: fixed; */
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    z-index: 9999;
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    
+}
+
+.menu li {
+    list-style: none;
+}
+
+nav .menu li a{
+    /* padding-left: 30px; */
+    padding-top: 5px;
+    font-size: 16px;
+    text-decoration: none;
+    color: #5f6368;
+    font-weight: 400;
+    padding: 12px;
+}
+
+nav .menu li a:hover{
+    background-color: #f1f5f9;
+    border-radius: 5px;
+} 
+
+/* 로그인 버튼  */
+
+.menu1{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 5px;
+    margin-right: 10px;
+}
+
+nav .menu1 a{
+    padding-left: 30px;
+    padding-top: 5px;
+    font-size: 16px;
+    text-decoration: none;
+    color: #fff;
+    /* border-radius: 10px; */
+    background-color: #7dd3fc;
+    font-weight: 400;
+    padding: 12px;
+}
+a:active{
+    border: solid red;
+}
+a:visited{
+    border: solid red; 
+}
+
+nav .menu1 a:hover{
+    background-color: #0284c7;
+    /* border-radius: 10px; */
+    color: #000;
+} 
+
+
+/* .menu1:after{display:block; content:''; clear:both;} */
+.menu1 > li{position:relative; float:left; }
+.menu1 > li > a{display:block; padding:0 15px; height:40px; line-height:40px; color:#fff;}
+.menu1 > li:hover .depth_1 {
+    display:block;
+    z-index: 111;
+}
+
+
+.menu1 .depth_1{
+    display:none; 
+    position:absolute; 
+    left:0; 
+    right:0; 
+    text-align:center; 
+    padding: 0px;
+}
+
+.menu1 .depth_1 a{
+    display:block; 
+    padding:5px; 
+    background:#666; 
+    color:#fff;
+
+}
+
+/* 메인페이지 */
+
+#main{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+#main img{
+   width: 100%;
+   height: 800px;
+   object-fit: cover; 
+}
+
+.min h1{
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    font-size: 50px; 
+    color: #fff;
+}
+.min p{
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    font-size: 20px; 
+    color: #fff;
+}
+
+
+/* 캠핑장소개 페이지 css */
+
+#visual{
+    display: grid;
+    grid-template-rows: 1fr ;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+#visual img{
+    height: 400px;
+    width:800px;
+    margin: auto ;
+    border-radius: 10px;
+    
+}
+
+.vis{
+    padding-left: 10%;
+    line-height: 20px;   
+}
+
+.vis h1{
+    font-size: 35px;
+    font-weight: 600;
+}
+.vis li {
+    font-size: 14px;
+}
+
+.visimg{
+    margin: auto;
+    position: relative;
+    margin-top: -80px;
+    
+}
+
+.visimg h4{
+    font-size: 16px;
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
+    left: 52%;
+}
+.visimg li{
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0;
+    padding-left: 52%;
+}
+/* 예약안내 페이지 css */
+#reservaction{
+    /* display: flex; */
+    margin-top: 50px;
+    height: 100%;
+    width: 100%;
+    /* background-color: #f3ede4; */
+    position: relative;
+}
+
+#reservaction img{
+    width: 100%;
+    height: 900px;
+    object-fit: cover;
+}
+
+.reser{
+    
+    margin:  auto;
+    position: absolute;
+    top: 50%;      
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    backdrop-filter: blur(7px);
+    width: 100%;
+    padding: 30px;
+    text-align: center;
+    line-height: 40px;
+}
+
+.reser p{
+    margin: 0;
+    color: transparent;
+    color: #fff;
+    color: #0f172a;
+    font-size: 1.5rem;
+    font-weight: 5 00;
+    align-items: center;
+}
+
+
+
+/* 오시는길 지도 */
+#map img{
+    padding: 50px 0;
+    width: 50%; 
+    height: 50%;
+    margin: auto ; 
+    display: block;
+}
+
+
+footer{
+    text-align: center;
+    background-color: #333f46;
+    padding-top: 30px;
+}
+
+address{
+    font-style: normal;
+    color: #fff;
+
+}
+
+.txt{
+    display: flex;
+    flex-direction: column;
+    font-style: normal;
+}
+
+
+
