@@ -1,28 +1,33 @@
 body{
     margin: 0;
-    list-style: none;
+    
 }
 *{
     box-sizing: border-box;
     user-select: none;
 }
+::-webkit-scrollbar{
+    display: none;
+}
 li{
     list-style: none;
 }
+/* header{
+    po
+} */
 
 header img{
     width: 120px;
     height: 50px;
 }
-
 nav{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     background-color:#eee;
     position: fixed;
-    top: 0%;
-    left: 0%;
+    left: 0px;
+    top: 0px;
     width: 100%;
     z-index: 9999;
 }
@@ -47,8 +52,8 @@ nav .menu li a{
     color: #5f6368;
     font-weight: 400;
     padding: 12px;
-}
 
+}
 nav .menu button{
 
     /* padding-left: 30px; */
@@ -73,19 +78,17 @@ nav .menu button a{
     background-color: transparent;
 }
 
+
+
+
 nav .menu li a:hover{
-    box-shadow: 0px 0px 10px ;
+    background-color: #f1f5f9;
     border-radius: 5px;
 } 
-
-nav .menu li:nth-child(2) a{
-    /* box-shadow: 0px 0px 10px ; */
-    border-bottom: solid 3px red;
-    /* border-radius: 5px; */
-    /* border-bottom: solid 2px red; */
+nav .menu button a:hover{
+    background-color: #f1f5f9;
+    border-radius: 5px;
 } 
-
-
 
 /* 로그인 버튼  */
 
@@ -109,19 +112,27 @@ nav .menu1 a{
     font-weight: 400;
     padding: 12px;
 }
+a:active{
+    border: solid red;
+}
+a:visited{
+    border: solid red; 
+}
 
 nav .menu1 a:hover{
-    background-color:#16a34a;
+    background-color: #16a34a;
     /* border-radius: 10px; */
     color: #000;
-    
-}   
+} 
 
-ul{list-style:none; }
-.menu1:after{display:block; content:''; clear:both;}
+
+/* .menu1:after{display:block; content:''; clear:both;} */
 .menu1 > li{position:relative; float:left; }
-.menu1 > li > a{display:block; padding:0 15px;  height:40px; line-height:40px; color:#fff;}
-.menu1 > li:hover .depth_1 {display:block;}
+.menu1 > li > a{display:block; padding:0 15px; height:40px; line-height:40px; color:#fff;}
+.menu1 > li:hover .depth_1 {
+    display:block;
+    z-index: 111;
+}
 
 
 .menu1 .depth_1{
@@ -133,112 +144,82 @@ ul{list-style:none; }
     padding: 0px;
 }
 
-
 .menu1 .depth_1 a{
     display:block; 
     padding:5px; 
     background:#166534; 
     color:#fff;
-    
+
 }
 
-/* 캠핑장 구성 */
-#soge{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin:  150px;
-    margin-top: 200px;
+/* 모달창 */
+
+section{
+    margin-top: 100px;
 }
 
-#soge img{
-    width: 650px;
-    height: 650px;
+section h1 {
+    text-align: center;
+}
+.modal-container {
+    border: #000 solid 2px;
+    border-radius: 5px;
+    width: 80%;
+    margin-bottom: 50px;
+    /* position: fixed; */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
     margin: auto;
-    border-radius: 100px;
 }
-.so ul {
-    line-height: 25px;
+.modal-container.show {
+    pointer-events: auto;
+    opacity: 1;
 }
-.so ul p {
-    font-size: 18px;
-    font-weight: 600;
+button {
+    display: flex;
+    border: solid 2px ;
+    background-color: #fff;
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 8px;
+    cursor: pointer;
+    margin: auto;
 }
-
-.floor{
-    position: relative;
-    /* float: right; */
-    align-items: center;
-    /* margin: 0 30px; */
-    width:75%;
-}
-.img1{
-    width: 900px;
-    height: 500PX;
-    position: absolute;
-    top: 20px;
-    right: -100px;
-    z-index: 9;
-}
-/* .back{
-    width: 900px;
-    height: 500PX;
-    position:relative;
-    top: 100px;
-    right: 0px;
-    background-color: #d1d5db;
-} */
-.img2{
-    width: 900px;
-    height: 500PX;
-    position:relative;
-    top: 100px;
-    right: 0px;
-}
-
-.so ul{
-  margin: 0;
-}
-
-.so h1{
-    color: #60a5fa;
-    font-size: 50px;
-}
-.so li{
-    font-size: 20px;
-}
-
-
-
-.bach img{
-    /* transform: rotate(90deg); */
-    width: 1024px;
-    height: 768px;
-    margin-left: 22%;
-}
-
-/* #rule{
-    background-color: #e2e2e2;
-
+/* .modal{
+    border: #000 solid 2px;
+    border-radius: 5px;
+    margin: auto;
 } */
 
-/* .ru {
-    padding-left: 100px;
+.three{
+    display: flex;
+    gap: 15px;
+    justify-content: end;
+    padding-right: 15px;
+}
 
-   
-} */
+table {
+    border-collapse: collapse;
+    width: 80%;
+    border: #000 solid 2px;
+    border-radius: 5px;
+    margin: auto;
+    margin-bottom: 30px;
+    /* opacity: 0.7; */
+}
 
-.ru h1{
-    font-size: 35px ;
+th, td {
+    border: 1px solid #ddd;
+    padding:  8px;
     text-align: center;
 }
 
-.line{
-    width: 80%;
-    height: 80%;
-    background-color: #fefefe;
-    border-radius: 10px;
-    border: #000 solid 1px;
-    margin: auto;
-    padding: 50px;
+th {
+    background-color: #f2f2f2;
+  
 }
 
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}

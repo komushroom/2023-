@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Skiils Camping</title>
     <link rel="stylesheet" href="/style/style.css">
+    <script src="js/script.js"></script>
+
 </head>
 <body>
 
@@ -15,7 +17,7 @@
             <ul class="menu">
                 <a href="index.html"><img src="images/logo.jpg" alt="#"></a>
                 <li><a href="camping.html">캠핑장소개</a></li>
-                <li><a href="#">예약하기</a></li>
+                <button><a href="modal.html">예약하기</a></button>
                 <li><a href="#">마이페이지</a></li>
             </ul>
 
@@ -36,7 +38,48 @@
 
     <section id="main">
         <!-- <img style="position: relative;" src="images/image_01 (4).jpg" alt=""> -->
-        <img src="images/여자.jpg" alt="">
+
+        <!-- 슬라이드 -->
+        <div class="slider">
+            <div class="slides">
+                <input type="radio" value="1" name="radio-btn" id="radio1">
+                <input type="radio" value="2" name="radio-btn" id="radio2" >
+                <input type="radio" value="3" name="radio-btn" id="radio3" >
+                <input type="radio" name="play-btn" id="play">
+                <input type="radio" name="stop-btn" id="stop">
+
+
+                <div class="slide first">   
+                    <img src="images/여자.jpg" alt="#">
+                </div>        
+
+                <div class="slide">
+                    <img src="images/image_01 (2).jpg" alt="#">
+                </div>
+
+                <div class="slide">
+                    <img src="images/image_01 (3).jpg" alt="#">
+                </div>
+
+                <div class="nav-auto">
+                    <div class="auto1"></div>
+                    <div class="auto2"></div>
+                    <div class="auto3"></div>
+                </div>
+                
+            </div>        
+
+            <div class="lab">
+                <label for="radio1" class="lab-btn"></label>
+                <label for="radio2" class="lab-btn"></label>
+                <label for="radio3" class="lab-btn"></label>
+                <label for="play"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg>  </label>
+                <label for="stop"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M48 64C21.5 64 0 85.5 0 112V400c0 26.5 21.5 48 48 48H80c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48H48zm192 0c-26.5 0-48 21.5-48 48V400c0 26.5 21.5 48 48 48h32c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48H240z"/></svg></label>
+            </div>        
+        </div>
+        
+        
+        
         <div class="min">
             <h1>숲 속의 휴식처<br>자연과 함께즐기는 <br> 친환경힐링 캠핑</h1>
             <p>Welcome to Skills Camping</p>
