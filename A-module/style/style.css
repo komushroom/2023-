@@ -1,0 +1,174 @@
+body{
+    margin: 0;
+}
+*{
+    user-select: none;
+    box-sizing: border-box  ;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #eee;
+    padding: 15px;
+    /* position: fixed;
+    z-index: 999; */
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    z-index: 9999;
+}
+
+.menu{ 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.menu li a{
+    padding: 10px;
+    color: #000;
+    border-radius: 5px;
+}
+.menu li a:hover{
+    background-color: #806969;
+
+}
+
+.login{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.login a{
+    padding: 10px;
+    color: #000;
+    border-radius: 10px;
+}
+.login a:hover{
+    background-color:  #7e9933;
+
+}
+
+/* 비주얼 이미지 */
+
+.visual{
+    display: flex;
+    position: relative;
+    /* margin-top: 100px; */
+}
+
+.vis{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 200px;
+    padding-bottom: 100px;
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 28.3%;
+    left: 15%;
+    margin-left: -288px;
+    margin-top: -255px;
+    float: left;
+    background-color: #2e2e2eee;
+
+}  
+.visual img{
+    height: 900px;
+    width: 100%;
+}
+
+.vis h1{
+    color: #fff;
+    font-size: 36px;
+    font-weight: 600;
+}
+.vis p{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+}
+/* 캠핑장소개  */
+
+.main{ 
+    display: flex;
+    flex-direction: column;
+    margin-top: 150px;
+    
+}
+.min{
+    padding-left: 150px;
+}
+
+.image{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+}
+
+
+.image img{
+    width: 800px;
+    height: 500px;
+    border-radius: 10px;
+}
+
+/* 예약안내 */
+.time{
+    position: relative;
+    margin-top: 200px;
+
+}
+.time img{
+    height: 800px;
+    width: 100%;
+}
+
+.ti p{
+    color: #000;
+    position: absolute;
+    top: 35%;
+    left: 30%;
+    text-align: center;
+    font-size: 23px;
+    font-weight: 600;
+}
+
+/* 오시는길 약도  */
+.map{
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+
+}
+.map img{
+    padding-left: -50px;
+}
+
+
+
+
+/* footer 영역 */
+
+
+
+
+
+
+
+.fot{
+    margin-top: 150px;
+    text-align: center;
+    padding: 30px;
+}
+
+footer{
+    background-color: #857878;
+}
